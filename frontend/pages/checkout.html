@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Checkout — NovaPay Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles/main.css"></head>
+<body><header class="header"><div class="container"><a href="../../index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text">NovaPay<span>Services</span></div></a><nav class="nav"><a href="../../index.html" class="nav-link">Home</a><a href="services.html" class="nav-link">Services</a></nav></div></header>
+<main style="padding-top:calc(var(--header-height)+2rem);max-width:800px;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem"><h1>Checkout</h1><p class="text-muted mb-4">Complete your order with cryptocurrency payment.</p>
+<div class="card mb-4"><h3 id="svc-name">Selected Service</h3><p id="svc-price" class="stat-value">$0</p></div>
+<h3 class="mb-3">Select Payment Method</h3>
+<div class="crypto-select-grid" id="crypto-options"><div class="crypto-select-card selected" data-crypto="BTC"><div class="crypto-icon">₿</div><div class="crypto-name">Bitcoin</div></div><div class="crypto-select-card" data-crypto="ETH"><div class="crypto-icon">Ξ</div><div class="crypto-name">Ethereum</div></div><div class="crypto-select-card" data-crypto="USDT_TRC20"><div class="crypto-icon">₮</div><div class="crypto-name">Tether TRC20</div></div></div>
+<div class="payment-address-box mt-4"><span>Send to:</span><code id="pay-addr">bc1ql9j624q07ml9xpccx7t79hu9khcleyy03x9pxv</code></div>
+<div class="payment-warning">⚠️ Send only the selected cryptocurrency. Sending other assets results in permanent loss.</div>
+<button class="btn btn-primary btn-lg mt-4" style="width:100%">I've Sent Payment</button></main>
+<footer class="footer mt-4"><div class="container"><div class="footer-bottom"><p>&copy; 2026 NovaPay Services</p></div></div></footer>
+<script>const a={BTC:'bc1ql9j624q07ml9xpccx7t79hu9khcleyy03x9pxv',ETH:'0x06C4A6cE5f5D318dc92855B187Ea684D2663a20D',USDT_TRC20:'TSfgvTAC1z6gnKjc6CDYL5YAFL8pxU5CMv'};document.querySelectorAll('.crypto-select-card').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('.crypto-select-card').forEach(x=>x.classList.remove('selected'));c.classList.add('selected');document.getElementById('pay-addr').textContent=a[c.dataset.crypto]}));const p=new URLSearchParams(location.search);if(p.get('service')){document.getElementById('svc-name').textContent=p.get('service');document.getElementById('svc-price').textContent='$'+p.get('price')}</script>
+</body></html>
