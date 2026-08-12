@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Login — NovaPay Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles/main.css"></head>
+<body><header class="header"><div class="container"><a href="../../index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text">NovaPay<span>Services</span></div></a><nav class="nav"><a href="../../index.html" class="nav-link">Home</a><a href="services.html" class="nav-link">Services</a></nav><div class="nav-actions"><button class="theme-toggle">☀️</button></div></div></header>
+<main style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding-top:var(--header-height)"><div class="auth-card"><h2>Welcome Back</h2><p class="text-muted text-center mb-4">Log in to your NovaPay account.</p><form id="login-form"><div class="form-group"><label class="form-label">Email</label><input type="email" id="login-email" class="form-input" placeholder="your@email.com" required></div><div class="form-group"><label class="form-label">Password</label><input type="password" id="login-password" class="form-input" placeholder="Enter password" required></div><button type="submit" class="btn btn-primary btn-lg" style="width:100%">Log In</button></form>
+<p class="auth-alt">Don't have an account? <a href="create-account.html">Create one</a></p></div></main>
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 NovaPay Services</p></div></div></footer>
+<script>document.getElementById('login-form').addEventListener('submit',function(e){e.preventDefault();window.location.href='dashboard.html'})</script>
+</body></html>
