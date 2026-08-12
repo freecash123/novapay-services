@@ -1,0 +1,9 @@
+const { z } = require('zod');
+const registerSchema = z.object({ full_name: z.string().min(2).max(255).trim(), email: z.string().email().max(255).trim().toLowerCase(), username: z.string().min(3).max(100).regex(/^[a-zA-Z0-9_]+$/).trim(), password: z.string().min(8).max(128), confirm_password: z.string() }).refine(d => d.password === d.confirm_password, { message: 'Passwords do not match', path: ['confirm_password'] });
+const loginSchema = z.object({ email_or_username: z.string().min(1).trim(), password: z.string().min(1) });
+const createOrderSchema = z.object({ service_id: z.string().uuid(), full_name: z.string().min(2).max(255).trim(), email: z.string().email().max(255).trim().toLowerCase(), username: z.string().min(3).max(100).trim().optional(), requirements: z.string().max(5000).optional(), notes: z.string().max(2000).optional(), cryptocurrency: z.enum(['BTC', 'ETH', 'LTC', 'DOGE', 'USDT_TRC20']) });
+const createTicketSchema = z.object({ subject: z.string().min(5).max(255).trim(), message: z.string().min(10).max(5000).trim(), order_id: z.string().uuid().optional(), priority: z.enum(['low', 'normal', 'high', 'urgent']).optional() });
+const ticketReplySchema = z.object({ message: z.string().min(1).max(5000).trim() });
+const updateProfileSchema = z.object({ full_name: z.string().min(2).max(255).trim().optional(), email: z.string().email().max(255).trim().toLowerCase().optional() });
+const changePasswordSchema = z.object({ current_password: z.string().min(1), new_password: z.string().min(8).max(128) });
+module.exports = { registerSchema, loginSchema, createOrderSchema, createTicketSchema, ticketReplySchema, updateProfileSchema, changePasswordSchema };

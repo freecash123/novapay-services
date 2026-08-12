@@ -1,0 +1,4 @@
+const { verifyAccessToken } = require('../utils/jwt');
+function authenticate(req, res, next) { const header = req.headers.authorization; if (!header || !header.startsWith('Bearer ')) return res.status(401).json({ error: 'Authentication required.' }); try { const decoded = verifyAccessToken(header.split(' ')[1]); req.user = decoded; next(); } catch (err) { if (err.name === 'TokenExpiredError') return res.status(401).json({ error: 'Session expired.', code: 'TOKEN_EXPIRED' }); return res.status(401).json({ error: 'Invalid token.' }); } }
+function requireAdmin(req, res, next) { if (!req.user || req.user.role !== 'admin') return res.status(403).json({ error: 'Admin access required.' }); next(); }
+module.exports = { authenticate, requireAdmin };

@@ -1,0 +1,2 @@
+function errorHandler(err, req, res, _next) { console.error('Error:', err); if (err.code === '23505') { const field = err.detail ? err.detail.match(/\(([^)]+)\)/)?.[1] : 'field'; return res.status(409).json({ error: `A record with that ${field || 'value'} already exists.` }); } const status = err.status || 500; const message = status === 500 ? 'Internal server error.' : err.message; res.status(status).json({ error: message }); }
+module.exports = { errorHandler };
