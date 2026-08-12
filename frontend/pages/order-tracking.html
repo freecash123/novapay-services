@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Track Order — NovaPay Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles/main.css"></head>
+<body><header class="header"><div class="container"><a href="../../index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text">NovaPay<span>Services</span></div></a><nav class="nav"><a href="../../index.html" class="nav-link">Home</a><a href="services.html" class="nav-link">Services</a></nav></div></header>
+<section class="page-header"><div class="container"><h1>Track Your Order</h1><p>Enter your Order ID and email to check status.</p></div></section>
+<section class="section"><div class="container" style="max-width:600px"><form id="track-form"><div class="form-group"><label class="form-label">Order ID</label><input type="text" class="form-input" placeholder="e.g. ORD-12345" required></div><div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@email.com" required></div><button type="submit" class="btn btn-primary btn-lg" style="width:100%">Track Order</button></form></div></section>
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 NovaPay Services</p></div></div></footer>
+<script>document.getElementById('track-form').addEventListener('submit',function(e){e.preventDefault();alert('Order tracking is linked to the backend. This demo shows a simulated workflow.')})</script>
+</body></html>
