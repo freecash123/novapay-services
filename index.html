@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="NovaPay Services — Professional digital services with transparent pricing and cryptocurrency payment support.">
+  <meta property="og:title" content="NovaPay Services — Digital Services. Simple. Secure. Professional.">
+  <title>NovaPay Services — Digital Services. Simple. Secure. Professional.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="frontend/styles/main.css">
+  <script src="frontend/js/core.js"></script>
+</head>
+<body>
+<header class="header" role="banner"><div class="container">
+  <a href="index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text">NovaPay<span>Services</span></div></a>
+  <nav class="nav">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="frontend/pages/services.html" class="nav-link">Services</a>
+    <a href="frontend/pages/pricing.html" class="nav-link">Pricing</a>
+    <a href="frontend/pages/how-it-works.html" class="nav-link">How It Works</a>
+    <a href="frontend/pages/crypto-payments.html" class="nav-link">Crypto</a>
+    <a href="frontend/pages/contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="theme-toggle" class="theme-toggle">☀️</button>
+    <a href="frontend/pages/login.html" class="btn btn-ghost btn-sm">Log In</a>
+    <a href="frontend/pages/create-account.html" class="btn btn-primary btn-sm">Get Started</a>
+  </div>
+  <button id="mobile-toggle" class="mobile-toggle"><span></span><span></span><span></span></button>
+</div></header>
+<div id="mobile-backdrop" class="mobile-menu-backdrop"></div>
+<div id="mobile-menu" class="mobile-menu">
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="frontend/pages/services.html" class="nav-link">Services</a>
+  <a href="frontend/pages/pricing.html" class="nav-link">Pricing</a>
+  <a href="frontend/pages/how-it-works.html" class="nav-link">How It Works</a>
+  <a href="frontend/pages/crypto-payments.html" class="nav-link">Crypto</a>
+  <a href="frontend/pages/faq.html" class="nav-link">FAQ</a>
+  <a href="frontend/pages/login.html" class="btn btn-secondary" style="margin-top:1rem">Log In</a>
+  <a href="frontend/pages/create-account.html" class="btn btn-primary">Create Account</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div><div class="hero-grid"></div></div>
+  <div class="container">
+    <div class="hero-badge"><span class="pulse-dot"></span> Accepting Crypto Payments</div>
+    <h1>Digital Services.<br><span class="highlight">Simple. Secure. Professional.</span></h1>
+    <p class="hero-subtitle">NovaPay Services provides premium digital services with transparent pricing and cryptocurrency payment support. From web development to AI automation, we deliver quality solutions for modern businesses.</p>
+    <div class="hero-actions">
+      <a href="frontend/pages/services.html" class="btn btn-primary btn-lg">View Services</a>
+      <a href="frontend/pages/create-account.html" class="btn btn-secondary btn-lg">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section"><div class="container"><div class="stats-grid">
+  <div class="stat-card reveal"><div class="stat-icon">🚀</div><div class="stat-value counter-value" data-target="1250" data-suffix="+">0</div><div class="stat-label">Projects Completed</div></div>
+  <div class="stat-card reveal"><div class="stat-icon">👥</div><div class="stat-value counter-value" data-target="890" data-suffix="+">0</div><div class="stat-label">Active Customers</div></div>
+  <div class="stat-card reveal"><div class="stat-icon">🌍</div><div class="stat-value counter-value" data-target="45" data-suffix="+">0</div><div class="stat-label">Countries Served</div></div>
+  <div class="stat-card reveal"><div class="stat-icon">⭐</div><div class="stat-value counter-value" data-target="98" data-suffix="%">0</div><div class="stat-label">Customer Satisfaction</div></div>
+</div></div></section>
+
+<section class="section"><div class="container">
+  <div class="section-header reveal"><h2>Popular Services</h2><p class="subtitle">Explore our most requested digital services — all with transparent pricing and crypto payment options.</p></div>
+  <div class="services-showcase-grid" id="home-services-grid"></div>
+  <div class="text-center mt-4"><a href="frontend/pages/services.html" class="btn btn-outline">View All Services →</a></div>
+</div></section>
+
+<section class="section" style="background:var(--color-bg-secondary)"><div class="container">
+  <div class="section-header reveal"><h2>Why Choose NovaPay Services</h2><p class="subtitle">We combine professional expertise with modern payment solutions to deliver exceptional value.</p></div>
+  <div class="why-grid">
+    <div class="why-card reveal"><div class="why-icon">🔒</div><h3>Secure Checkout</h3><p>Industry-standard security practices protect your transactions and personal data.</p></div>
+    <div class="why-card reveal"><div class="why-icon">💎</div><h3>Transparent Pricing</h3><p>No hidden fees. Every service displays the full price upfront.</p></div>
+    <div class="why-card reveal"><div class="why-icon">📦</div><h3>Order Tracking</h3><p>Real-time tracking keeps you informed from purchase to delivery.</p></div>
+    <div class="why-card reveal"><div class="why-icon">💬</div><h3>24/7 Support</h3><p>Our team is available around the clock to help with any questions.</p></div>
+    <div class="why-card reveal"><div class="why-icon">₿</div><h3>Crypto Payments</h3><p>Pay with Bitcoin, Ethereum, Litecoin, Dogecoin, or USDT.</p></div>
+    <div class="why-card reveal"><div class="why-icon">⚡</div><h3>Fast Delivery</h3><p>Clear estimated delivery times on every service.</p></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-header reveal"><h2>How It Works</h2><p class="subtitle">Get started in four simple steps.</p></div>
+  <div class="steps">
+    <div class="step reveal"><div class="step-number">1</div><h4>Choose</h4><p>Browse and select the service that fits your needs.</p></div>
+    <div class="step reveal"><div class="step-number">2</div><h4>Order</h4><p>Provide your requirements and choose your payment method.</p></div>
+    <div class="step reveal"><div class="step-number">3</div><h4>Pay</h4><p>Send cryptocurrency to the provided receiving address.</p></div>
+    <div class="step reveal"><div class="step-number">4</div><h4>Receive</h4><p>Track your order and receive your completed project.</p></div>
+  </div>
+</div></section>
+
+<section class="section" style="background:var(--color-bg-secondary)"><div class="container">
+  <div class="section-header reveal"><h2>What Our Customers Say</h2></div>
+  <div class="reviews-grid">
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"NovaPay Services delivered an outstanding website. The crypto payment option made the process seamless. Highly recommended!"</p><div class="review-author"><div class="review-avatar">S</div><div><strong>Sarah M.</strong><span>Startup Founder</span></div></div></div>
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"The SEO package transformed our online presence. 200% increase in organic traffic. Excellent work!"</p><div class="review-author"><div class="review-avatar">J</div><div><strong>James K.</strong><span>E-Commerce Owner</span></div></div></div>
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"Their social media management is outstanding. Engagement up, followers growing, detailed reports."</p><div class="review-author"><div class="review-avatar">M</div><div><strong>Maria L.</strong><span>Marketing Director</span></div></div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-header reveal"><h2>Supported Payment Methods</h2><p class="subtitle">We support major cryptocurrencies for fast, secure, borderless payments.</p></div>
+  <div class="payment-methods-grid">
+    <div class="payment-method-card reveal"><div class="payment-method-icon">₿</div><h4>Bitcoin</h4><span>BTC</span></div>
+    <div class="payment-method-card reveal"><div class="payment-method-icon">Ξ</div><h4>Ethereum</h4><span>ETH</span></div>
+    <div class="payment-method-card reveal"><div class="payment-method-icon">Ł</div><h4>Litecoin</h4><span>LTC</span></div>
+    <div class="payment-method-card reveal"><div class="payment-method-icon">Ð</div><h4>Dogecoin</h4><span>DOGE</span></div>
+    <div class="payment-method-card reveal"><div class="payment-method-icon">₮</div><h4>Tether</h4><span>USDT</span></div>
+  </div>
+</div></section>
+
+<section class="cta-section"><div class="cta-bg"></div><div class="container">
+  <h2>Ready to Get Started?</h2>
+  <p>Join hundreds of satisfied customers who trust NovaPay Services for their digital needs.</p>
+  <div class="flex justify-center gap-2"><a href="frontend/pages/create-account.html" class="btn btn-primary btn-lg">Create Free Account</a><a href="frontend/pages/services.html" class="btn btn-secondary btn-lg">Browse Services</a></div>
+</div></section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text">NovaPay<span>Services</span></div></a><p>Professional digital services with transparent pricing and cryptocurrency payment support.</p></div><div class="footer-column"><h4>Company</h4><ul><li><a href="frontend/pages/about.html">About Us</a></li><li><a href="frontend/pages/services.html">Services</a></li><li><a href="frontend/pages/contact.html">Contact</a></li><li><a href="frontend/pages/pricing.html">Pricing</a></li></ul></div><div class="footer-column"><h4>Resources</h4><ul><li><a href="frontend/pages/faq.html">FAQ</a></li><li><a href="frontend/pages/how-it-works.html">How It Works</a></li><li><a href="frontend/pages/order-tracking.html">Order Tracking</a></li><li><a href="frontend/pages/dashboard.html">Dashboard</a></li></ul></div><div class="footer-column"><h4>Legal</h4><ul><li><a href="frontend/pages/privacy-policy.html">Privacy Policy</a></li><li><a href="frontend/pages/terms-of-service.html">Terms of Service</a></li><li><a href="frontend/pages/refund-policy.html">Refund Policy</a></li></ul></div><div class="footer-column"><h4>Payments</h4><ul><li><a href="frontend/pages/crypto-payments.html">Bitcoin</a></li><li><a href="frontend/pages/crypto-payments.html">Ethereum</a></li><li><a href="frontend/pages/crypto-payments.html">Litecoin</a></li><li><a href="frontend/pages/crypto-payments.html">Dogecoin</a></li><li><a href="frontend/pages/crypto-payments.html">USDT</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 NovaPay Services. All rights reserved. Demo frontend — replace authentication before production.</p><div class="footer-social"><a href="#">𝕏</a><a href="#">in</a><a href="#">⌂</a><a href="#">◇</a></div></div></div></footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const DEMO_SERVICES=[{id:'1',name:'Professional Website Development',slug:'professional-website-development',description:'Get a fully responsive, SEO-optimized professional website built with modern technologies.',category:'Website Development',price:499,features:['Responsive design','5 custom pages','Contact form','Basic SEO','30 days support']},{id:'2',name:'E-Commerce Store Setup',slug:'ecommerce-store-setup',description:'Launch your online store with a complete e-commerce solution.',category:'Website Development',price:1299,features:['Full e-commerce','100 products','Payment integration','Inventory management','Admin dashboard']},{id:'3',name:'Brand Identity Package',slug:'brand-identity-package',description:'Complete brand identity design with logo, color palette, and brand guidelines.',category:'Graphic Design',price:349,features:['3 logo concepts','Unlimited revisions','Color palette','Source files']},{id:'4',name:'SEO Optimization Package',slug:'seo-optimization-package',description:'Boost search rankings with comprehensive SEO optimization.',category:'SEO',price:449,features:['Technical audit','Keyword research','On-page optimization','Monthly reports']},{id:'5',name:'AI Chatbot Integration',slug:'ai-chatbot-integration',description:'AI-powered chatbot for 24/7 customer support and lead capture.',category:'AI Automation',price:799,features:['Custom AI chatbot','NLP capabilities','Lead capture','Analytics dashboard']},{id:'6',name:'Custom Web Application',slug:'custom-web-application',description:'Bespoke web application tailored to your business needs.',category:'Custom Development',price:2499,features:['Custom functionality','User authentication','Database design','Admin panel','90 days support']}];
+  const grid=document.getElementById('home-services-grid');
+  const icons={'Website Development':'🌐','Graphic Design':'🎨','SEO':'🔍','AI Automation':'🤖','Custom Development':'⚙️'};
+  if(grid)grid.innerHTML=DEMO_SERVICES.map(s=>`<div class="service-card reveal"><div class="service-card-icon">${icons[s.category]||'💼'}</div><h3>${s.name}</h3><p>${s.description}</p><ul class="service-card-features">${s.features.slice(0,3).map(f=>'<li>'+f+'</li>').join('')}</ul><div class="service-card-footer"><div class="service-card-price">$${s.price}<span> USD</span></div><a href="frontend/pages/checkout.html?service=${s.slug}" class="btn btn-primary btn-sm">Get Started</a></div></div>`).join('');
+});
+</script>
+</body>
+</html>
